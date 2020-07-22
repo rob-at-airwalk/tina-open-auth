@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/rob-at-airwalk/tina-open-auth#readme",
   "dependencies": {
+    "@tinacms/api-git": "^0.24.0",
+    "@tinacms/git-client": "^0.24.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "babel-plugin-styled-components": "^1.10.7",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "husky": "^4.2.5",
     "isomorphic-fetch": "^2.2.1",
@@ -34,7 +37,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "standard": "^14.3.4",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.1.1",
+    "tinacms": "^0.24.0"
   },
   "now": {
     "alias": "next-go"
