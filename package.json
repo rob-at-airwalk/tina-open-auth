@@ -1,25 +1,23 @@
 {
   "name": "tina-open-auth",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
+  "version": "1.0.0",
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) and configured for Open Authoring with TinaCMS. This repo follows the steps outlined in [this guide](https://tinacms.org/guides/nextjs/github-open-authoring/initial-setup).",
+  "main": "index.js",
   "dependencies": {
-    "dotenv": "^8.2.0",
-    "next": "9.3.5",
-    "next-tinacms-github": "^0.2.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-tinacms-github": "^0.6.0",
-    "styled-components": "^5.1.0",
-    "tinacms": "^0.22.1"
+    "dotenv": "^8.2.0"
   },
-  "devDependencies": {
-    "@types/node": "^13.13.1",
-    "hygen-next-tinacms-github": "https://github.com/dwalkr/hygen-next-tinacms-github",
-    "typescript": "^3.8.3"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rob-at-airwalk/tina-open-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rob-at-airwalk/tina-open-auth/issues"
+  },
+  "homepage": "https://github.com/rob-at-airwalk/tina-open-auth#readme"
 }

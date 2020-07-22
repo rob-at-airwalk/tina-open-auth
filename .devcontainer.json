@@ -1,0 +1,19 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details or
+// https://aka.ms/vscode-dev-containers/definitions for sample configurations.
+{
+	"dockerFile": "Dockerfile",
+	"extensions": ["ms-python.python"],
+	"forwardPorts": [3000],
+	"runArgs": [
+		// Mount config directory
+		//"-v", "${env:HOME}${env:USERPROFILE}/github/modern-workplace-demo/graphapi/configs:/workspaces/o365-documentation/config",
+		// Mount .ssh directories (so git can still work)
+		"-v", "${env:HOME}${env:USERPROFILE}/.ssh/id_rsa:/root/.ssh-localhost/id_rsa:ro",
+		"-v", "${env:HOME}${env:USERPROFILE}/.ssh/known_hosts:/root/.ssh-localhost/known_hosts:ro",
+		"-v", "${env:HOME}${env:USERPROFILE}/.gitconfig:/root/.gitconfig:ro"
+
+
+    ],
+    // Copy the contents to the correct location and set permissions
+	"postCreateCommand": "mkdir -p ~/.ssh && cp -r ~/.ssh-localhost/* ~/.ssh && chmod 700 ~/.ssh && chmod 600 ~/.ssh/*"
+}
