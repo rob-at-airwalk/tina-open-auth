@@ -1,0 +1,54 @@
+{
+  "name": "tina-open-auth",
+  "version": "1.0.0",
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) and configured for Open Authoring with TinaCMS. This repo follows the steps outlined in [this guide](https://tinacms.org/guides/nextjs/github-open-authoring/initial-setup).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_PATH=. NODE_ENV=production node server.js",
+    "lint": "standard 'api/*' 'components/*' 'layouts/*' 'pages/*' 'styles/*' 'routes.js' 'server.js'",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rob-at-airwalk/tina-open-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rob-at-airwalk/tina-open-auth/issues"
+  },
+  "homepage": "https://github.com/rob-at-airwalk/tina-open-auth#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "express": "^4.17.1",
+    "husky": "^4.2.5",
+    "isomorphic-fetch": "^2.2.1",
+    "lint-staged": "^10.2.11",
+    "next": "^9.4.4",
+    "next-routes": "^1.4.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "standard": "^14.3.4",
+    "styled-components": "^5.1.1"
+  },
+  "now": {
+    "alias": "next-go"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  }
+}
